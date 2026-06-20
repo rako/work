@@ -9,7 +9,7 @@ import (
 // timeはパッケージ名で、time.Timeで型を指定する
 
 func main() {
-	args := os.Args
+	var args = os.Args
 	var worktime time.Time
 
 	switch len(args){

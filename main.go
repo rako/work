@@ -15,6 +15,7 @@ func main() {
 	switch len(args){
 	case 1:
 		fmt.Println("サブコマンドが必要です。'start'か'end'サブコマンドを入力してください")
+		os.Exit(1)
 
 	case 2:
 		var subcommand string = args[1]
@@ -37,6 +38,6 @@ func main() {
 
 	default:
 		fmt.Println("workコマンドとサブコマンドstart/endのみです")
-		return
+		os.Exit(1)
 	}
 }
